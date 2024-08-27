@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -53,7 +54,7 @@ fun ButtonX(
         Box(
             modifier = modifier
                 .weight(1f)
-                .background(Color(0xFF00BCD4))
+                //.background(Color(0xFF00BCD4))
                 .border(width = .5.dp, Color(0xFF2C2F32))
                 .clickable(
                     enabled = true,
@@ -202,7 +203,7 @@ fun CalculatorFirstRow(
 @Preview(showBackground = true)
 @Composable
 fun CalcUPeU() {
-    NavegacionJPCTheme() {
+    NavegacionJPCTheme(colorScheme = lightColorScheme()) {
         Column {
             var op by remember { mutableStateOf("") }
             var isNewOp by remember { mutableStateOf(true) }

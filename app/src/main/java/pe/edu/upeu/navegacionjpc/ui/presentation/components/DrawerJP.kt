@@ -92,7 +92,7 @@ fun MyAppDrawer(
         }
     ) {
         Scaffold(
-            /*topBar = { CustomTopAppBar(
+            topBar = { CustomTopAppBar(
                 "",
                 darkMode = darkMode,
                 themeType = themeType,
@@ -101,8 +101,8 @@ fun MyAppDrawer(
                 scaffoldState = drawerState,
                 openDialog={}
             )
-            }*/
-            topBar = {
+            }
+            /*topBar = {
                 TopAppBar(
                     title = { Text("Jetpack Compose Drawer") },
                     navigationIcon = {
@@ -111,7 +111,7 @@ fun MyAppDrawer(
                         }
                     }
                 )
-            },
+            }*/,
             content = { padding ->
                 Box(modifier = Modifier.padding(padding)) {
                     NavigationHost(navController)
